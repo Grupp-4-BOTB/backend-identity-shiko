@@ -16,13 +16,13 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '10.x'
+          dotnet-version: "10.x"
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./IdentityWebApi/IdentityWebApi.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish ./IdentityWebApi/IdentityWebApi.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -47,6 +47,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Shiko-Identity-Webb-Api'
+          app-name: "Shiko-Identity-Webb-Api"
           publish-profile: ${{ secrets.BACKEND_IDENTITY }}
           package: .
