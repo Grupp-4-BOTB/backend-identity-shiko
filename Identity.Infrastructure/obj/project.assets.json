@@ -1,49 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {
-      "Identity.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Identity.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Identity.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Identity.Application.dll": {}
-        }
-      },
-      "Identity.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/Identity.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Identity.Domain.dll": {}
-        }
-      }
-    }
+    "net10.0": {}
   },
-  "libraries": {
-    "Identity.Application/1.0.0": {
-      "type": "project",
-      "path": "../Identity.Application/Identity.Application.csproj",
-      "msbuildProject": "../Identity.Application/Identity.Application.csproj"
-    },
-    "Identity.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Identity.Domain/Identity.Domain.csproj",
-      "msbuildProject": "../Identity.Domain/Identity.Domain.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net10.0": [
-      "Identity.Application >= 1.0.0",
-      "Identity.Domain >= 1.0.0"
-    ]
+    "net10.0": []
   },
   "packageFolders": {
     "C:\\Users\\gabri\\.nuget\\packages\\": {},
@@ -76,16 +38,8 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "C:\\Users\\gabri\\Desktop\\backend-identity-shiko\\Identity.Application\\Identity.Application.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\backend-identity-shiko\\Identity.Application\\Identity.Application.csproj"
-            },
-            "C:\\Users\\gabri\\Desktop\\backend-identity-shiko\\Identity.Domain\\Identity.Domain.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\backend-identity-shiko\\Identity.Domain\\Identity.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -102,7 +56,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -120,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
